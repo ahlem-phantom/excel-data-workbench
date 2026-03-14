@@ -1,0 +1,35 @@
+# Build output
+bin/
+out/
+target/
+build/
+dist/
+
+# Java artifacts
+*.class
+*.jar.original
+*.war
+*.ear
+
+# Logs and crash files
+*.log
+hs_err_pid*
+replay_pid*
+
+# IDE folders
+.idea/
+.vscode/
+
+# Eclipse generated settings
+.settings/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
