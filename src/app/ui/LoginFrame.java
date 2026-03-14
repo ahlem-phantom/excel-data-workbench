@@ -61,7 +61,7 @@ public class LoginFrame extends JFrame {
         app.setForeground(Color.WHITE);
         app.setFont(new Font("Segoe UI", Font.BOLD, 28));
 
-        JLabel line = new JLabel("Portfolio Edition");
+        JLabel line = new JLabel("Professional Excel Workspace");
         line.setForeground(new Color(221, 244, 255));
         line.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 

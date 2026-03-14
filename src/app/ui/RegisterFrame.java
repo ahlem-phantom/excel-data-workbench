@@ -73,13 +73,13 @@ public class RegisterFrame extends JFrame {
         title.setForeground(Color.WHITE);
         title.setFont(new Font("Segoe UI", Font.BOLD, 28));
 
-        JLabel subtitle = new JLabel("Start building polished Excel demos.");
+        JLabel subtitle = new JLabel("Get started with secure Excel workflows.");
         subtitle.setForeground(new Color(227, 246, 255));
         subtitle.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 
-        JLabel r1 = heroLine("- Generic Excel workflows for portfolio demos");
-        JLabel r2 = heroLine("- Direct editing, search, and row operations");
-        JLabel r3 = heroLine("- Export your edited results in one click");
+        JLabel r1 = heroLine("BCrypt-secured user accounts");
+        JLabel r2 = heroLine("Smart .xlsx import with header detection");
+        JLabel r3 = heroLine("Edit, search, undo, and export fast");
 
         hero.add(title);
         hero.add(Box.createVerticalStrut(8));

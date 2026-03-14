@@ -10,7 +10,7 @@ A Java Swing desktop application, presented in the UI as Excel Insight Studio, f
 
 It is built as a polished desktop workspace for spreadsheet-heavy tasks where users need more than simple file viewing. The application can load Excel workbooks, detect structured or merged headers automatically, display the data in an editable table, help users search through records quickly, jump to specific rows, remove incorrect entries, undo deletions, and export the updated result back to a clean `.xlsx` file.
 
-The project combines Java Swing for the user interface, Apache POI for Excel processing, and MySQL for account management, making it both a practical utility and a strong portfolio-style desktop application. The current authentication layer uses BCrypt for password storage, which means passwords are securely hashed before being stored in the database instead of being saved in plain text.
+The project combines Java Swing for the user interface, Apache POI for Excel processing, and MySQL for account management, making it both a practical utility desktop application. The current authentication layer uses BCrypt for password storage, which means passwords are securely hashed before being stored in the database instead of being saved in plain text.
 
 ---
 
@@ -24,6 +24,40 @@ The project combines Java Swing for the user interface, Apache POI for Excel pro
 - **Excel export** : export the edited view back to a formatted `.xlsx` file
 - **Edit lock** : disable editing when you want to browse safely
 - **Modern Swing UI** : redesigned login, registration, and workspace screens
+
+---
+
+## Screenshots
+
+### Authentication
+
+| Login | Register |
+|:---:|:---:|
+| ![Login](screenshots/login.png) | ![Register](screenshots/register.png) |
+
+### Workspace
+
+| Empty Workspace | Import |
+|:---:|:---:|
+| ![Empty Workspace](screenshots/empty_workspace.png) | ![Import](screenshots/import.png) |
+
+### Editing
+
+| Edit Cell | Delete Row |
+|:---:|:---:|
+| ![Edit Cell](screenshots/edit-cell.png) | ![Delete Row](screenshots/delete-row.png) |
+
+### Search & Navigation
+
+| Search | Go-To Row |
+|:---:|:---:|
+| ![Search](screenshots/search.png) | ![Go-To Row](screenshots/goto_row.png) |
+
+### Export
+
+| Export | Export Results |
+|:---:|:---:|
+| ![Export](screenshots/export.png) | ![Export Results](screenshots/export_results.png) |
 
 ---
 
@@ -51,6 +85,7 @@ Java-Excel-API/
 ├── sql/
 │   └── DatabaseSetup.sql                # Database setup script
 ├── lib/                                 # All dependency JARs
+├── screenshots/                         # Application screenshots
 ├── LICENSE                              # MIT license
 ├── bin/                                 # Compiled .class files
 └── README.md
@@ -255,7 +290,7 @@ This is why multiple undo operations work in reverse order, exactly the way user
 
 ## Implementation Notes
 
-- The current workspace uses standard Swing `JTable` instead of the old grouped-header JBroTable approach because the application now prioritizes direct editing, row deletion, undo, and export synchronization.
+- The current workspace uses a standard Swing `JTable` to prioritize direct editing, search, row deletion, undo, and export synchronization.
 - Password storage uses BCrypt.
 
 ---
